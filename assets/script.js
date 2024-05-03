@@ -22,6 +22,8 @@ console.log(slides);
 //*******Variables******/
 const dots = document.querySelector(".dots");
 let index = 0;
+const clickRight = document.querySelector("#banner .arrow_right");
+const clickLeft = document.querySelector("#banner .arrow_left");
 
 //*******Dots********//
 function displayDots() {
@@ -33,3 +35,13 @@ function displayDots() {
   }
 }
 displayDots();
+
+//******Arrow Righ*****/
+clickRight.addEventListener("click", () => {
+  console.log("Click Right");
+});
+
+//******Arrow Left******/
+clickLeft.addEventListener("click", () => {
+  console.log("clickLeft");
+});
